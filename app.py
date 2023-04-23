@@ -23,7 +23,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
           'Sharjah', 'Mohali', 'Bengaluru']
 
 
-pipe = pickle.load(open('pipe.pkl', 'rb'))
+pipe = pickle.load(open('"D:\\4. Projects\\IPL Match Prediction\\IPL+match+predictor-+Code+Files\\Code Files\\pipe.pkl"', 'rb'))
 st.title('IPL Win Predictor')
 
 
