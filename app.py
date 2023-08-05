@@ -22,10 +22,14 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
           'Visakhapatnam', 'Pune', 'Raipur', 'Ranchi', 'Abu Dhabi',
           'Sharjah', 'Mohali', 'Bengaluru']
 
+import pickle
 
-pipe = pickle.load(open('"D:\\4. Projects\\IPL Match Prediction\\IPL+match+predictor-+Code+Files\\Code Files\\pipe.pkl"', 'rb'))
-st.title('IPL Win Predictor')
+# Specify the absolute file path
+file_path = 'D:\\4. Projects\\IPL Match Prediction\\ipl_main.pkl'
 
+# Load the pickled data
+with open(file_path, 'rb') as f:
+    pipe = pickle.load(f)
 
 col1, col2 = st.columns(2)
 
